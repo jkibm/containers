@@ -47,7 +47,7 @@ The following diagram shows how Ingress directs communication from the internet 
 
 1. A user sends a request to your app by accessing your app's URL. This URL is the public URL for your exposed app appended with the Ingress resource path, such as `mycluster.us-south.containers.appdomain.cloud/myapp`.
 
-2. A DNS system service resolves the URL to the portable public IP address of the load balancer that exposes the ALB in your cluster.
+2. A DNS system service resolves the hostname of the URL to the portable public IP address of the load balancer that exposes the ALB in your cluster.
 
 3. Based on the resolved IP address, the client sends the request to the load balancer service that exposes the ALB.
 
